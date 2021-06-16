@@ -1,2 +1,2 @@
 # ZEN-Program-Tasks
-Submission of assignments as part of the ZEN program
+Submission of assignments/tasks - ZEN Classes

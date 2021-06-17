@@ -1,5 +1,47 @@
-1. 
+1. Using for..in
+   Code - var obj = [
+                    { person: "Name 1", age: "2", company: "GUVI" },
+                    { person: "Name 2", age: "5", company: "GUVI geek" },
+                    { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ]
 
+            for( var i in obj){
+                for( var j in obj[i]){
+                    console.log(j + " : " + obj[i][j])
+                }
+            }
+    Output :  person : Name 1
+              age : 2
+              company : GUVI
+              person : Name 2
+              age : 5
+              company : GUVI geek
+              person : Name 3
+              age : 8
+              company : GUVI geek network       
+             
+    Using forEach
+    Code - var obj = [
+                    { person: "Name 1", age: "2", company: "GUVI" },
+                    { person: "Name 2", age: "5", company: "GUVI geek" },
+                    { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ]
+
+            obj.forEach( function display(elem){
+                for( var i in elem){
+                    console.log(i + " : " + elem[i])
+                }
+            });
+
+    Output :  person : Name 1
+              age : 2
+              company : GUVI
+              person : Name 2
+              age : 5
+              company : GUVI geek
+              person : Name 3
+              age : 8
+              company : GUVI geek network
 
 
 2. var xhr = new XMLHttpRequest();

@@ -12,7 +12,7 @@
    };
    xhr.send();
    
-   Output : 
+Output : 
    
 test.html:12 0 : https://restcountries.eu/data/afg.svg
 test.html:12 1 : https://restcountries.eu/data/ala.svg
@@ -265,4 +265,1269 @@ test.html:12 247 : https://restcountries.eu/data/yem.svg
 test.html:12 248 : https://restcountries.eu/data/zmb.svg
 test.html:12 249 : https://restcountries.eu/data/zwe.svg
 
-3. 
+3. var xhr = new XMLHttpRequest();
+       xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+       xhr.onload = function () {
+           var data = JSON.parse(this.response);
+           for( var i in data){
+               console.log(i + " : " + data[i].name)
+               console.log("Region" + " : " + data[i].region)
+               console.log("Subregion" + " : " +  data[i].subregion)
+               console.log("Population" + " : " +  data[i].population)
+               console.log("")
+           }
+       };
+       xhr.send();
+
+Output :
+
+test.html:12 0 : Afghanistan
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 27657145
+test.html:16 
+test.html:12 1 : Åland Islands
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 28875
+test.html:16 
+test.html:12 2 : Albania
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 2886026
+test.html:16 
+test.html:12 3 : Algeria
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 40400000
+test.html:16 
+test.html:12 4 : American Samoa
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 57100
+test.html:16 
+test.html:12 5 : Andorra
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 78014
+test.html:16 
+test.html:12 6 : Angola
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 25868000
+test.html:16 
+test.html:12 7 : Anguilla
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 13452
+test.html:16 
+test.html:12 8 : Antarctica
+test.html:13 Region : Polar
+test.html:14 Subregion : 
+test.html:15 Population : 1000
+test.html:16 
+test.html:12 9 : Antigua and Barbuda
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 86295
+test.html:16 
+test.html:12 10 : Argentina
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 43590400
+test.html:16 
+test.html:12 11 : Armenia
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 2994400
+test.html:16 
+test.html:12 12 : Aruba
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 107394
+test.html:16 
+test.html:12 13 : Australia
+test.html:13 Region : Oceania
+test.html:14 Subregion : Australia and New Zealand
+test.html:15 Population : 24117360
+test.html:16 
+test.html:12 14 : Austria
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 8725931
+test.html:16 
+test.html:12 15 : Azerbaijan
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 9730500
+test.html:16 
+test.html:12 16 : Bahamas
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 378040
+test.html:16 
+test.html:12 17 : Bahrain
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 1404900
+test.html:16 
+test.html:12 18 : Bangladesh
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 161006790
+test.html:16 
+test.html:12 19 : Barbados
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 285000
+test.html:16 
+test.html:12 20 : Belarus
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 9498700
+test.html:16 
+test.html:12 21 : Belgium
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 11319511
+test.html:16 
+test.html:12 22 : Belize
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 370300
+test.html:16 
+test.html:12 23 : Benin
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 10653654
+test.html:16 
+test.html:12 24 : Bermuda
+test.html:13 Region : Americas
+test.html:14 Subregion : Northern America
+test.html:15 Population : 61954
+test.html:16 
+test.html:12 25 : Bhutan
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 775620
+test.html:16 
+test.html:12 26 : Bolivia (Plurinational State of)
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 10985059
+test.html:16 
+test.html:12 27 : Bonaire, Sint Eustatius and Saba
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 17408
+test.html:16 
+test.html:12 28 : Bosnia and Herzegovina
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 3531159
+test.html:16 
+test.html:12 29 : Botswana
+test.html:13 Region : Africa
+test.html:14 Subregion : Southern Africa
+test.html:15 Population : 2141206
+test.html:16 
+test.html:12 30 : Bouvet Island
+test.html:13 Region : 
+test.html:14 Subregion : 
+test.html:15 Population : 0
+test.html:16 
+test.html:12 31 : Brazil
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 206135893
+test.html:16 
+test.html:12 32 : British Indian Ocean Territory
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 3000
+test.html:16 
+test.html:12 33 : United States Minor Outlying Islands
+test.html:13 Region : Americas
+test.html:14 Subregion : Northern America
+test.html:15 Population : 300
+test.html:16 
+test.html:12 34 : Virgin Islands (British)
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 28514
+test.html:16 
+test.html:12 35 : Virgin Islands (U.S.)
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 114743
+test.html:16 
+test.html:12 36 : Brunei Darussalam
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 411900
+test.html:16 
+test.html:12 37 : Bulgaria
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 7153784
+test.html:16 
+test.html:12 38 : Burkina Faso
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 19034397
+test.html:16 
+test.html:12 39 : Burundi
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 10114505
+test.html:16 
+test.html:12 40 : Cambodia
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 15626444
+test.html:16 
+test.html:12 41 : Cameroon
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 22709892
+test.html:16 
+test.html:12 42 : Canada
+test.html:13 Region : Americas
+test.html:14 Subregion : Northern America
+test.html:15 Population : 36155487
+test.html:16 
+test.html:12 43 : Cabo Verde
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 531239
+test.html:16 
+test.html:12 44 : Cayman Islands
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 58238
+test.html:16 
+test.html:12 45 : Central African Republic
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 4998000
+test.html:16 
+test.html:12 46 : Chad
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 14497000
+test.html:16 
+test.html:12 47 : Chile
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 18191900
+test.html:16 
+test.html:12 48 : China
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 1377422166
+test.html:16 
+test.html:12 49 : Christmas Island
+test.html:13 Region : Oceania
+test.html:14 Subregion : Australia and New Zealand
+test.html:15 Population : 2072
+test.html:16 
+test.html:12 50 : Cocos (Keeling) Islands
+test.html:13 Region : Oceania
+test.html:14 Subregion : Australia and New Zealand
+test.html:15 Population : 550
+test.html:16 
+test.html:12 51 : Colombia
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 48759958
+test.html:16 
+test.html:12 52 : Comoros
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 806153
+test.html:16 
+test.html:12 53 : Congo
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 4741000
+test.html:16 
+test.html:12 54 : Congo (Democratic Republic of the)
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 85026000
+test.html:16 
+test.html:12 55 : Cook Islands
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 18100
+test.html:16 
+test.html:12 56 : Costa Rica
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 4890379
+test.html:16 
+test.html:12 57 : Croatia
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 4190669
+test.html:16 
+test.html:12 58 : Cuba
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 11239004
+test.html:16 
+test.html:12 59 : Curaçao
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 154843
+test.html:16 
+test.html:12 60 : Cyprus
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 847000
+test.html:16 
+test.html:12 61 : Czech Republic
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 10558524
+test.html:16 
+test.html:12 62 : Denmark
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 5717014
+test.html:16 
+test.html:12 63 : Djibouti
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 900000
+test.html:16 
+test.html:12 64 : Dominica
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 71293
+test.html:16 
+test.html:12 65 : Dominican Republic
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 10075045
+test.html:16 
+test.html:12 66 : Ecuador
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 16545799
+test.html:16 
+test.html:12 67 : Egypt
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 91290000
+test.html:16 
+test.html:12 68 : El Salvador
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 6520675
+test.html:16 
+test.html:12 69 : Equatorial Guinea
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 1222442
+test.html:16 
+test.html:12 70 : Eritrea
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 5352000
+test.html:16 
+test.html:12 71 : Estonia
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 1315944
+test.html:16 
+test.html:12 72 : Ethiopia
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 92206005
+test.html:16 
+test.html:12 73 : Falkland Islands (Malvinas)
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 2563
+test.html:16 
+test.html:12 74 : Faroe Islands
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 49376
+test.html:16 
+test.html:12 75 : Fiji
+test.html:13 Region : Oceania
+test.html:14 Subregion : Melanesia
+test.html:15 Population : 867000
+test.html:16 
+test.html:12 76 : Finland
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 5491817
+test.html:16 
+test.html:12 77 : France
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 66710000
+test.html:16 
+test.html:12 78 : French Guiana
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 254541
+test.html:16 
+test.html:12 79 : French Polynesia
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 271800
+test.html:16 
+test.html:12 80 : French Southern Territories
+test.html:13 Region : Africa
+test.html:14 Subregion : Southern Africa
+test.html:15 Population : 140
+test.html:16 
+test.html:12 81 : Gabon
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 1802278
+test.html:16 
+test.html:12 82 : Gambia
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 1882450
+test.html:16 
+test.html:12 83 : Georgia
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 3720400
+test.html:16 
+test.html:12 84 : Germany
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 81770900
+test.html:16 
+test.html:12 85 : Ghana
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 27670174
+test.html:16 
+test.html:12 86 : Gibraltar
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 33140
+test.html:16 
+test.html:12 87 : Greece
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 10858018
+test.html:16 
+test.html:12 88 : Greenland
+test.html:13 Region : Americas
+test.html:14 Subregion : Northern America
+test.html:15 Population : 55847
+test.html:16 
+test.html:12 89 : Grenada
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 103328
+test.html:16 
+test.html:12 90 : Guadeloupe
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 400132
+test.html:16 
+test.html:12 91 : Guam
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 184200
+test.html:16 
+test.html:12 92 : Guatemala
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 16176133
+test.html:16 
+test.html:12 93 : Guernsey
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 62999
+test.html:16 
+test.html:12 94 : Guinea
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 12947000
+test.html:16 
+test.html:12 95 : Guinea-Bissau
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 1547777
+test.html:16 
+test.html:12 96 : Guyana
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 746900
+test.html:16 
+test.html:12 97 : Haiti
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 11078033
+test.html:16 
+test.html:12 98 : Heard Island and McDonald Islands
+test.html:13 Region : 
+test.html:14 Subregion : 
+test.html:15 Population : 0
+test.html:16 
+test.html:12 99 : Holy See
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 451
+test.html:16 
+test.html:12 100 : Honduras
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 8576532
+test.html:16 
+test.html:12 101 : Hong Kong
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 7324300
+test.html:16 
+test.html:12 102 : Hungary
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 9823000
+test.html:16 
+test.html:12 103 : Iceland
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 334300
+test.html:16 
+test.html:12 104 : India
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 1295210000
+test.html:16 
+test.html:12 105 : Indonesia
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 258705000
+test.html:16 
+test.html:12 106 : Côte d'Ivoire
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 22671331
+test.html:16 
+test.html:12 107 : Iran (Islamic Republic of)
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 79369900
+test.html:16 
+test.html:12 108 : Iraq
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 37883543
+test.html:16 
+test.html:12 109 : Ireland
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 6378000
+test.html:16 
+test.html:12 110 : Isle of Man
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 84497
+test.html:16 
+test.html:12 111 : Israel
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 8527400
+test.html:16 
+test.html:12 112 : Italy
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 60665551
+test.html:16 
+test.html:12 113 : Jamaica
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 2723246
+test.html:16 
+test.html:12 114 : Japan
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 126960000
+test.html:16 
+test.html:12 115 : Jersey
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 100800
+test.html:16 
+test.html:12 116 : Jordan
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 9531712
+test.html:16 
+test.html:12 117 : Kazakhstan
+test.html:13 Region : Asia
+test.html:14 Subregion : Central Asia
+test.html:15 Population : 17753200
+test.html:16 
+test.html:12 118 : Kenya
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 47251000
+test.html:16 
+test.html:12 119 : Kiribati
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 113400
+test.html:16 
+test.html:12 120 : Kuwait
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 4183658
+test.html:16 
+test.html:12 121 : Kyrgyzstan
+test.html:13 Region : Asia
+test.html:14 Subregion : Central Asia
+test.html:15 Population : 6047800
+test.html:16 
+test.html:12 122 : Lao People's Democratic Republic
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 6492400
+test.html:16 
+test.html:12 123 : Latvia
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 1961600
+test.html:16 
+test.html:12 124 : Lebanon
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 5988000
+test.html:16 
+test.html:12 125 : Lesotho
+test.html:13 Region : Africa
+test.html:14 Subregion : Southern Africa
+test.html:15 Population : 1894194
+test.html:16 
+test.html:12 126 : Liberia
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 4615000
+test.html:16 
+test.html:12 127 : Libya
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 6385000
+test.html:16 
+test.html:12 128 : Liechtenstein
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 37623
+test.html:16 
+test.html:12 129 : Lithuania
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 2872294
+test.html:16 
+test.html:12 130 : Luxembourg
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 576200
+test.html:16 
+test.html:12 131 : Macao
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 649100
+test.html:16 
+test.html:12 132 : Macedonia (the former Yugoslav Republic of)
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 2058539
+test.html:16 
+test.html:12 133 : Madagascar
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 22434363
+test.html:16 
+test.html:12 134 : Malawi
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 16832910
+test.html:16 
+test.html:12 135 : Malaysia
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 31405416
+test.html:16 
+test.html:12 136 : Maldives
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 344023
+test.html:16 
+test.html:12 137 : Mali
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 18135000
+test.html:16 
+test.html:12 138 : Malta
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 425384
+test.html:16 
+test.html:12 139 : Marshall Islands
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 54880
+test.html:16 
+test.html:12 140 : Martinique
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 378243
+test.html:16 
+test.html:12 141 : Mauritania
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 3718678
+test.html:16 
+test.html:12 142 : Mauritius
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 1262879
+test.html:16 
+test.html:12 143 : Mayotte
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 226915
+test.html:16 
+test.html:12 144 : Mexico
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 122273473
+test.html:16 
+test.html:12 145 : Micronesia (Federated States of)
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 102800
+test.html:16 
+test.html:12 146 : Moldova (Republic of)
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 3553100
+test.html:16 
+test.html:12 147 : Monaco
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 38400
+test.html:16 
+test.html:12 148 : Mongolia
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 3093100
+test.html:16 
+test.html:12 149 : Montenegro
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 621810
+test.html:16 
+test.html:12 150 : Montserrat
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 4922
+test.html:16 
+test.html:12 151 : Morocco
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 33337529
+test.html:16 
+test.html:12 152 : Mozambique
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 26423700
+test.html:16 
+test.html:12 153 : Myanmar
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 51419420
+test.html:16 
+test.html:12 154 : Namibia
+test.html:13 Region : Africa
+test.html:14 Subregion : Southern Africa
+test.html:15 Population : 2324388
+test.html:16 
+test.html:12 155 : Nauru
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 10084
+test.html:16 
+test.html:12 156 : Nepal
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 28431500
+test.html:16 
+test.html:12 157 : Netherlands
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 17019800
+test.html:16 
+test.html:12 158 : New Caledonia
+test.html:13 Region : Oceania
+test.html:14 Subregion : Melanesia
+test.html:15 Population : 268767
+test.html:16 
+test.html:12 159 : New Zealand
+test.html:13 Region : Oceania
+test.html:14 Subregion : Australia and New Zealand
+test.html:15 Population : 4697854
+test.html:16 
+test.html:12 160 : Nicaragua
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 6262703
+test.html:16 
+test.html:12 161 : Niger
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 20715000
+test.html:16 
+test.html:12 162 : Nigeria
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 186988000
+test.html:16 
+test.html:12 163 : Niue
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 1470
+test.html:16 
+test.html:12 164 : Norfolk Island
+test.html:13 Region : Oceania
+test.html:14 Subregion : Australia and New Zealand
+test.html:15 Population : 2302
+test.html:16 
+test.html:12 165 : Korea (Democratic People's Republic of)
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 25281000
+test.html:16 
+test.html:12 166 : Northern Mariana Islands
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 56940
+test.html:16 
+test.html:12 167 : Norway
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 5223256
+test.html:16 
+test.html:12 168 : Oman
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 4420133
+test.html:16 
+test.html:12 169 : Pakistan
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 194125062
+test.html:16 
+test.html:12 170 : Palau
+test.html:13 Region : Oceania
+test.html:14 Subregion : Micronesia
+test.html:15 Population : 17950
+test.html:16 
+test.html:12 171 : Palestine, State of
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 4682467
+test.html:16 
+test.html:12 172 : Panama
+test.html:13 Region : Americas
+test.html:14 Subregion : Central America
+test.html:15 Population : 3814672
+test.html:16 
+test.html:12 173 : Papua New Guinea
+test.html:13 Region : Oceania
+test.html:14 Subregion : Melanesia
+test.html:15 Population : 8083700
+test.html:16 
+test.html:12 174 : Paraguay
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 6854536
+test.html:16 
+test.html:12 175 : Peru
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 31488700
+test.html:16 
+test.html:12 176 : Philippines
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 103279800
+test.html:16 
+test.html:12 177 : Pitcairn
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 56
+test.html:16 
+test.html:12 178 : Poland
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 38437239
+test.html:16 
+test.html:12 179 : Portugal
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 10374822
+test.html:16 
+test.html:12 180 : Puerto Rico
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 3474182
+test.html:16 
+test.html:12 181 : Qatar
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 2587564
+test.html:16 
+test.html:12 182 : Republic of Kosovo
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 1733842
+test.html:16 
+test.html:12 183 : Réunion
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 840974
+test.html:16 
+test.html:12 184 : Romania
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 19861408
+test.html:16 
+test.html:12 185 : Russian Federation
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 146599183
+test.html:16 
+test.html:12 186 : Rwanda
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 11553188
+test.html:16 
+test.html:12 187 : Saint Barthélemy
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 9417
+test.html:16 
+test.html:12 188 : Saint Helena, Ascension and Tristan da Cunha
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 4255
+test.html:16 
+test.html:12 189 : Saint Kitts and Nevis
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 46204
+test.html:16 
+test.html:12 190 : Saint Lucia
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 186000
+test.html:16 
+test.html:12 191 : Saint Martin (French part)
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 36979
+test.html:16 
+test.html:12 192 : Saint Pierre and Miquelon
+test.html:13 Region : Americas
+test.html:14 Subregion : Northern America
+test.html:15 Population : 6069
+test.html:16 
+test.html:12 193 : Saint Vincent and the Grenadines
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 109991
+test.html:16 
+test.html:12 194 : Samoa
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 194899
+test.html:16 
+test.html:12 195 : San Marino
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 33005
+test.html:16 
+test.html:12 196 : Sao Tome and Principe
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 187356
+test.html:16 
+test.html:12 197 : Saudi Arabia
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 32248200
+test.html:16 
+test.html:12 198 : Senegal
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 14799859
+test.html:16 
+test.html:12 199 : Serbia
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 7076372
+test.html:16 
+test.html:12 200 : Seychelles
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 91400
+test.html:16 
+test.html:12 201 : Sierra Leone
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 7075641
+test.html:16 
+test.html:12 202 : Singapore
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 5535000
+test.html:16 
+test.html:12 203 : Sint Maarten (Dutch part)
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 38247
+test.html:16 
+test.html:12 204 : Slovakia
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 5426252
+test.html:16 
+test.html:12 205 : Slovenia
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 2064188
+test.html:16 
+test.html:12 206 : Solomon Islands
+test.html:13 Region : Oceania
+test.html:14 Subregion : Melanesia
+test.html:15 Population : 642000
+test.html:16 
+test.html:12 207 : Somalia
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 11079000
+test.html:16 
+test.html:12 208 : South Africa
+test.html:13 Region : Africa
+test.html:14 Subregion : Southern Africa
+test.html:15 Population : 55653654
+test.html:16 
+test.html:12 209 : South Georgia and the South Sandwich Islands
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 30
+test.html:16 
+test.html:12 210 : Korea (Republic of)
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 50801405
+test.html:16 
+test.html:12 211 : South Sudan
+test.html:13 Region : Africa
+test.html:14 Subregion : Middle Africa
+test.html:15 Population : 12131000
+test.html:16 
+test.html:12 212 : Spain
+test.html:13 Region : Europe
+test.html:14 Subregion : Southern Europe
+test.html:15 Population : 46438422
+test.html:16 
+test.html:12 213 : Sri Lanka
+test.html:13 Region : Asia
+test.html:14 Subregion : Southern Asia
+test.html:15 Population : 20966000
+test.html:16 
+test.html:12 214 : Sudan
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 39598700
+test.html:16 
+test.html:12 215 : Suriname
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 541638
+test.html:16 
+test.html:12 216 : Svalbard and Jan Mayen
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 2562
+test.html:16 
+test.html:12 217 : Swaziland
+test.html:13 Region : Africa
+test.html:14 Subregion : Southern Africa
+test.html:15 Population : 1132657
+test.html:16 
+test.html:12 218 : Sweden
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 9894888
+test.html:16 
+test.html:12 219 : Switzerland
+test.html:13 Region : Europe
+test.html:14 Subregion : Western Europe
+test.html:15 Population : 8341600
+test.html:16 
+test.html:12 220 : Syrian Arab Republic
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 18564000
+test.html:16 
+test.html:12 221 : Taiwan
+test.html:13 Region : Asia
+test.html:14 Subregion : Eastern Asia
+test.html:15 Population : 23503349
+test.html:16 
+test.html:12 222 : Tajikistan
+test.html:13 Region : Asia
+test.html:14 Subregion : Central Asia
+test.html:15 Population : 8593600
+test.html:16 
+test.html:12 223 : Tanzania, United Republic of
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 55155000
+test.html:16 
+test.html:12 224 : Thailand
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 65327652
+test.html:16 
+test.html:12 225 : Timor-Leste
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 1167242
+test.html:16 
+test.html:12 226 : Togo
+test.html:13 Region : Africa
+test.html:14 Subregion : Western Africa
+test.html:15 Population : 7143000
+test.html:16 
+test.html:12 227 : Tokelau
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 1411
+test.html:16 
+test.html:12 228 : Tonga
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 103252
+test.html:16 
+test.html:12 229 : Trinidad and Tobago
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 1349667
+test.html:16 
+test.html:12 230 : Tunisia
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 11154400
+test.html:16 
+test.html:12 231 : Turkey
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 78741053
+test.html:16 
+test.html:12 232 : Turkmenistan
+test.html:13 Region : Asia
+test.html:14 Subregion : Central Asia
+test.html:15 Population : 4751120
+test.html:16 
+test.html:12 233 : Turks and Caicos Islands
+test.html:13 Region : Americas
+test.html:14 Subregion : Caribbean
+test.html:15 Population : 31458
+test.html:16 
+test.html:12 234 : Tuvalu
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 10640
+test.html:16 
+test.html:12 235 : Uganda
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 33860700
+test.html:16 
+test.html:12 236 : Ukraine
+test.html:13 Region : Europe
+test.html:14 Subregion : Eastern Europe
+test.html:15 Population : 42692393
+test.html:16 
+test.html:12 237 : United Arab Emirates
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 9856000
+test.html:16 
+test.html:12 238 : United Kingdom of Great Britain and Northern Ireland
+test.html:13 Region : Europe
+test.html:14 Subregion : Northern Europe
+test.html:15 Population : 65110000
+test.html:16 
+test.html:12 239 : United States of America
+test.html:13 Region : Americas
+test.html:14 Subregion : Northern America
+test.html:15 Population : 323947000
+test.html:16 
+test.html:12 240 : Uruguay
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 3480222
+test.html:16 
+test.html:12 241 : Uzbekistan
+test.html:13 Region : Asia
+test.html:14 Subregion : Central Asia
+test.html:15 Population : 31576400
+test.html:16 
+test.html:12 242 : Vanuatu
+test.html:13 Region : Oceania
+test.html:14 Subregion : Melanesia
+test.html:15 Population : 277500
+test.html:16 
+test.html:12 243 : Venezuela (Bolivarian Republic of)
+test.html:13 Region : Americas
+test.html:14 Subregion : South America
+test.html:15 Population : 31028700
+test.html:16 
+test.html:12 244 : Viet Nam
+test.html:13 Region : Asia
+test.html:14 Subregion : South-Eastern Asia
+test.html:15 Population : 92700000
+test.html:16 
+test.html:12 245 : Wallis and Futuna
+test.html:13 Region : Oceania
+test.html:14 Subregion : Polynesia
+test.html:15 Population : 11750
+test.html:16 
+test.html:12 246 : Western Sahara
+test.html:13 Region : Africa
+test.html:14 Subregion : Northern Africa
+test.html:15 Population : 510713
+test.html:16 
+test.html:12 247 : Yemen
+test.html:13 Region : Asia
+test.html:14 Subregion : Western Asia
+test.html:15 Population : 27478000
+test.html:16 
+test.html:12 248 : Zambia
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 15933883
+test.html:16 
+test.html:12 249 : Zimbabwe
+test.html:13 Region : Africa
+test.html:14 Subregion : Eastern Africa
+test.html:15 Population : 14240168
+test.html:16 

@@ -1,4 +1,4 @@
-1. Using for..in
+1. Using for...in
    Code - var obj = [
                     { person: "Name 1", age: "2", company: "GUVI" },
                     { person: "Name 2", age: "5", company: "GUVI geek" },
@@ -34,6 +34,67 @@
             });
 
     Output :  person : Name 1
+              age : 2
+              company : GUVI
+              person : Name 2
+              age : 5
+              company : GUVI geek
+              person : Name 3
+              age : 8
+              company : GUVI geek network
+
+    Using for...of
+    Code - var obj = [
+                    { person: "Name 1", age: "2", company: "GUVI" },
+                    { person: "Name 2", age: "5", company: "GUVI geek" },
+                    { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ]
+            
+            for( var i of obj){
+                console.log(i)
+            }
+            console.log("")
+            for( var i of obj){
+                for( var j in i)
+                    console.log(j + " : " + i[j])
+            }
+
+    Output :  { person: 'Name 1', age: '2', company: 'GUVI' }
+              { person: 'Name 2', age: '5', company: 'GUVI geek' }
+              { person: 'Name 3', age: '8', company: 'GUVI geek network' }
+
+              person : Name 1
+              age : 2
+              company : GUVI
+              person : Name 2
+              age : 5
+              company : GUVI geek
+              person : Name 3
+              age : 8
+              company : GUVI geek network    
+              
+    Using for 
+    Code - var obj = [
+                    { person: "Name 1", age: "2", company: "GUVI" },
+                    { person: "Name 2", age: "5", company: "GUVI geek" },
+                    { person: "Name 3", age: "8", company: "GUVI geek network" },
+                ]
+            
+            for( var i=0; i<obj.length; i++){
+                console.log(obj[i])
+            }
+            console.log("")
+            for( var i=0; i<obj.length; i++){
+                for( var j in obj[i]){
+                    console.log(j + " : " + obj[i][j])
+                }
+            }
+            
+    Output :  { person: 'Name 1', age: '2', company: 'GUVI' }
+              { person: 'Name 2', age: '5', company: 'GUVI geek' }
+              { person: 'Name 3', age: '8', company: 'GUVI geek network' }
+
+              person : Name 1
               age : 2
               company : GUVI
               person : Name 2

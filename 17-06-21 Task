@@ -7,262 +7,262 @@
        xhr.onload = function () {
            var data = JSON.parse(this.response);
            for( var i in data){
-           console.log(data[i].flag)   
+           console.log(i + " : " + data[i].flag)   
        }
    };
    xhr.send();
    
    Output : 
    
-test.html:12 https://restcountries.eu/data/afg.svg
-test.html:12 https://restcountries.eu/data/ala.svg
-test.html:12 https://restcountries.eu/data/alb.svg
-test.html:12 https://restcountries.eu/data/dza.svg
-test.html:12 https://restcountries.eu/data/asm.svg
-test.html:12 https://restcountries.eu/data/and.svg
-test.html:12 https://restcountries.eu/data/ago.svg
-test.html:12 https://restcountries.eu/data/aia.svg
-test.html:12 https://restcountries.eu/data/ata.svg
-test.html:12 https://restcountries.eu/data/atg.svg
-test.html:12 https://restcountries.eu/data/arg.svg
-test.html:12 https://restcountries.eu/data/arm.svg
-test.html:12 https://restcountries.eu/data/abw.svg
-test.html:12 https://restcountries.eu/data/aus.svg
-test.html:12 https://restcountries.eu/data/aut.svg
-test.html:12 https://restcountries.eu/data/aze.svg
-test.html:12 https://restcountries.eu/data/bhs.svg
-test.html:12 https://restcountries.eu/data/bhr.svg
-test.html:12 https://restcountries.eu/data/bgd.svg
-test.html:12 https://restcountries.eu/data/brb.svg
-test.html:12 https://restcountries.eu/data/blr.svg
-test.html:12 https://restcountries.eu/data/bel.svg
-test.html:12 https://restcountries.eu/data/blz.svg
-test.html:12 https://restcountries.eu/data/ben.svg
-test.html:12 https://restcountries.eu/data/bmu.svg
-test.html:12 https://restcountries.eu/data/btn.svg
-test.html:12 https://restcountries.eu/data/bol.svg
-test.html:12 https://restcountries.eu/data/bes.svg
-test.html:12 https://restcountries.eu/data/bih.svg
-test.html:12 https://restcountries.eu/data/bwa.svg
-test.html:12 https://restcountries.eu/data/bvt.svg
-test.html:12 https://restcountries.eu/data/bra.svg
-test.html:12 https://restcountries.eu/data/iot.svg
-test.html:12 https://restcountries.eu/data/umi.svg
-test.html:12 https://restcountries.eu/data/vgb.svg
-test.html:12 https://restcountries.eu/data/vir.svg
-test.html:12 https://restcountries.eu/data/brn.svg
-test.html:12 https://restcountries.eu/data/bgr.svg
-test.html:12 https://restcountries.eu/data/bfa.svg
-test.html:12 https://restcountries.eu/data/bdi.svg
-test.html:12 https://restcountries.eu/data/khm.svg
-test.html:12 https://restcountries.eu/data/cmr.svg
-test.html:12 https://restcountries.eu/data/can.svg
-test.html:12 https://restcountries.eu/data/cpv.svg
-test.html:12 https://restcountries.eu/data/cym.svg
-test.html:12 https://restcountries.eu/data/caf.svg
-test.html:12 https://restcountries.eu/data/tcd.svg
-test.html:12 https://restcountries.eu/data/chl.svg
-test.html:12 https://restcountries.eu/data/chn.svg
-test.html:12 https://restcountries.eu/data/cxr.svg
-test.html:12 https://restcountries.eu/data/cck.svg
-test.html:12 https://restcountries.eu/data/col.svg
-test.html:12 https://restcountries.eu/data/com.svg
-test.html:12 https://restcountries.eu/data/cog.svg
-test.html:12 https://restcountries.eu/data/cod.svg
-test.html:12 https://restcountries.eu/data/cok.svg
-test.html:12 https://restcountries.eu/data/cri.svg
-test.html:12 https://restcountries.eu/data/hrv.svg
-test.html:12 https://restcountries.eu/data/cub.svg
-test.html:12 https://restcountries.eu/data/cuw.svg
-test.html:12 https://restcountries.eu/data/cyp.svg
-test.html:12 https://restcountries.eu/data/cze.svg
-test.html:12 https://restcountries.eu/data/dnk.svg
-test.html:12 https://restcountries.eu/data/dji.svg
-test.html:12 https://restcountries.eu/data/dma.svg
-test.html:12 https://restcountries.eu/data/dom.svg
-test.html:12 https://restcountries.eu/data/ecu.svg
-test.html:12 https://restcountries.eu/data/egy.svg
-test.html:12 https://restcountries.eu/data/slv.svg
-test.html:12 https://restcountries.eu/data/gnq.svg
-test.html:12 https://restcountries.eu/data/eri.svg
-test.html:12 https://restcountries.eu/data/est.svg
-test.html:12 https://restcountries.eu/data/eth.svg
-test.html:12 https://restcountries.eu/data/flk.svg
-test.html:12 https://restcountries.eu/data/fro.svg
-test.html:12 https://restcountries.eu/data/fji.svg
-test.html:12 https://restcountries.eu/data/fin.svg
-test.html:12 https://restcountries.eu/data/fra.svg
-test.html:12 https://restcountries.eu/data/guf.svg
-test.html:12 https://restcountries.eu/data/pyf.svg
-test.html:12 https://restcountries.eu/data/atf.svg
-test.html:12 https://restcountries.eu/data/gab.svg
-test.html:12 https://restcountries.eu/data/gmb.svg
-test.html:12 https://restcountries.eu/data/geo.svg
-test.html:12 https://restcountries.eu/data/deu.svg
-test.html:12 https://restcountries.eu/data/gha.svg
-test.html:12 https://restcountries.eu/data/gib.svg
-test.html:12 https://restcountries.eu/data/grc.svg
-test.html:12 https://restcountries.eu/data/grl.svg
-test.html:12 https://restcountries.eu/data/grd.svg
-test.html:12 https://restcountries.eu/data/glp.svg
-test.html:12 https://restcountries.eu/data/gum.svg
-test.html:12 https://restcountries.eu/data/gtm.svg
-test.html:12 https://restcountries.eu/data/ggy.svg
-test.html:12 https://restcountries.eu/data/gin.svg
-test.html:12 https://restcountries.eu/data/gnb.svg
-test.html:12 https://restcountries.eu/data/guy.svg
-test.html:12 https://restcountries.eu/data/hti.svg
-test.html:12 https://restcountries.eu/data/hmd.svg
-test.html:12 https://restcountries.eu/data/vat.svg
-test.html:12 https://restcountries.eu/data/hnd.svg
-test.html:12 https://restcountries.eu/data/hkg.svg
-test.html:12 https://restcountries.eu/data/hun.svg
-test.html:12 https://restcountries.eu/data/isl.svg
-test.html:12 https://restcountries.eu/data/ind.svg
-test.html:12 https://restcountries.eu/data/idn.svg
-test.html:12 https://restcountries.eu/data/civ.svg
-test.html:12 https://restcountries.eu/data/irn.svg
-test.html:12 https://restcountries.eu/data/irq.svg
-test.html:12 https://restcountries.eu/data/irl.svg
-test.html:12 https://restcountries.eu/data/imn.svg
-test.html:12 https://restcountries.eu/data/isr.svg
-test.html:12 https://restcountries.eu/data/ita.svg
-test.html:12 https://restcountries.eu/data/jam.svg
-test.html:12 https://restcountries.eu/data/jpn.svg
-test.html:12 https://restcountries.eu/data/jey.svg
-test.html:12 https://restcountries.eu/data/jor.svg
-test.html:12 https://restcountries.eu/data/kaz.svg
-test.html:12 https://restcountries.eu/data/ken.svg
-test.html:12 https://restcountries.eu/data/kir.svg
-test.html:12 https://restcountries.eu/data/kwt.svg
-test.html:12 https://restcountries.eu/data/kgz.svg
-test.html:12 https://restcountries.eu/data/lao.svg
-test.html:12 https://restcountries.eu/data/lva.svg
-test.html:12 https://restcountries.eu/data/lbn.svg
-test.html:12 https://restcountries.eu/data/lso.svg
-test.html:12 https://restcountries.eu/data/lbr.svg
-test.html:12 https://restcountries.eu/data/lby.svg
-test.html:12 https://restcountries.eu/data/lie.svg
-test.html:12 https://restcountries.eu/data/ltu.svg
-test.html:12 https://restcountries.eu/data/lux.svg
-test.html:12 https://restcountries.eu/data/mac.svg
-test.html:12 https://restcountries.eu/data/mkd.svg
-test.html:12 https://restcountries.eu/data/mdg.svg
-test.html:12 https://restcountries.eu/data/mwi.svg
-test.html:12 https://restcountries.eu/data/mys.svg
-test.html:12 https://restcountries.eu/data/mdv.svg
-test.html:12 https://restcountries.eu/data/mli.svg
-test.html:12 https://restcountries.eu/data/mlt.svg
-test.html:12 https://restcountries.eu/data/mhl.svg
-test.html:12 https://restcountries.eu/data/mtq.svg
-test.html:12 https://restcountries.eu/data/mrt.svg
-test.html:12 https://restcountries.eu/data/mus.svg
-test.html:12 https://restcountries.eu/data/myt.svg
-test.html:12 https://restcountries.eu/data/mex.svg
-test.html:12 https://restcountries.eu/data/fsm.svg
-test.html:12 https://restcountries.eu/data/mda.svg
-test.html:12 https://restcountries.eu/data/mco.svg
-test.html:12 https://restcountries.eu/data/mng.svg
-test.html:12 https://restcountries.eu/data/mne.svg
-test.html:12 https://restcountries.eu/data/msr.svg
-test.html:12 https://restcountries.eu/data/mar.svg
-test.html:12 https://restcountries.eu/data/moz.svg
-test.html:12 https://restcountries.eu/data/mmr.svg
-test.html:12 https://restcountries.eu/data/nam.svg
-test.html:12 https://restcountries.eu/data/nru.svg
-test.html:12 https://restcountries.eu/data/npl.svg
-test.html:12 https://restcountries.eu/data/nld.svg
-test.html:12 https://restcountries.eu/data/ncl.svg
-test.html:12 https://restcountries.eu/data/nzl.svg
-test.html:12 https://restcountries.eu/data/nic.svg
-test.html:12 https://restcountries.eu/data/ner.svg
-test.html:12 https://restcountries.eu/data/nga.svg
-test.html:12 https://restcountries.eu/data/niu.svg
-test.html:12 https://restcountries.eu/data/nfk.svg
-test.html:12 https://restcountries.eu/data/prk.svg
-test.html:12 https://restcountries.eu/data/mnp.svg
-test.html:12 https://restcountries.eu/data/nor.svg
-test.html:12 https://restcountries.eu/data/omn.svg
-test.html:12 https://restcountries.eu/data/pak.svg
-test.html:12 https://restcountries.eu/data/plw.svg
-test.html:12 https://restcountries.eu/data/pse.svg
-test.html:12 https://restcountries.eu/data/pan.svg
-test.html:12 https://restcountries.eu/data/png.svg
-test.html:12 https://restcountries.eu/data/pry.svg
-test.html:12 https://restcountries.eu/data/per.svg
-test.html:12 https://restcountries.eu/data/phl.svg
-test.html:12 https://restcountries.eu/data/pcn.svg
-test.html:12 https://restcountries.eu/data/pol.svg
-test.html:12 https://restcountries.eu/data/prt.svg
-test.html:12 https://restcountries.eu/data/pri.svg
-test.html:12 https://restcountries.eu/data/qat.svg
-test.html:12 https://restcountries.eu/data/kos.svg
-test.html:12 https://restcountries.eu/data/reu.svg
-test.html:12 https://restcountries.eu/data/rou.svg
-test.html:12 https://restcountries.eu/data/rus.svg
-test.html:12 https://restcountries.eu/data/rwa.svg
-test.html:12 https://restcountries.eu/data/blm.svg
-test.html:12 https://restcountries.eu/data/shn.svg
-test.html:12 https://restcountries.eu/data/kna.svg
-test.html:12 https://restcountries.eu/data/lca.svg
-test.html:12 https://restcountries.eu/data/maf.svg
-test.html:12 https://restcountries.eu/data/spm.svg
-test.html:12 https://restcountries.eu/data/vct.svg
-test.html:12 https://restcountries.eu/data/wsm.svg
-test.html:12 https://restcountries.eu/data/smr.svg
-test.html:12 https://restcountries.eu/data/stp.svg
-test.html:12 https://restcountries.eu/data/sau.svg
-test.html:12 https://restcountries.eu/data/sen.svg
-test.html:12 https://restcountries.eu/data/srb.svg
-test.html:12 https://restcountries.eu/data/syc.svg
-test.html:12 https://restcountries.eu/data/sle.svg
-test.html:12 https://restcountries.eu/data/sgp.svg
-test.html:12 https://restcountries.eu/data/sxm.svg
-test.html:12 https://restcountries.eu/data/svk.svg
-test.html:12 https://restcountries.eu/data/svn.svg
-test.html:12 https://restcountries.eu/data/slb.svg
-test.html:12 https://restcountries.eu/data/som.svg
-test.html:12 https://restcountries.eu/data/zaf.svg
-test.html:12 https://restcountries.eu/data/sgs.svg
-test.html:12 https://restcountries.eu/data/kor.svg
-test.html:12 https://restcountries.eu/data/ssd.svg
-test.html:12 https://restcountries.eu/data/esp.svg
-test.html:12 https://restcountries.eu/data/lka.svg
-test.html:12 https://restcountries.eu/data/sdn.svg
-test.html:12 https://restcountries.eu/data/sur.svg
-test.html:12 https://restcountries.eu/data/sjm.svg
-test.html:12 https://restcountries.eu/data/swz.svg
-test.html:12 https://restcountries.eu/data/swe.svg
-test.html:12 https://restcountries.eu/data/che.svg
-test.html:12 https://restcountries.eu/data/syr.svg
-test.html:12 https://restcountries.eu/data/twn.svg
-test.html:12 https://restcountries.eu/data/tjk.svg
-test.html:12 https://restcountries.eu/data/tza.svg
-test.html:12 https://restcountries.eu/data/tha.svg
-test.html:12 https://restcountries.eu/data/tls.svg
-test.html:12 https://restcountries.eu/data/tgo.svg
-test.html:12 https://restcountries.eu/data/tkl.svg
-test.html:12 https://restcountries.eu/data/ton.svg
-test.html:12 https://restcountries.eu/data/tto.svg
-test.html:12 https://restcountries.eu/data/tun.svg
-test.html:12 https://restcountries.eu/data/tur.svg
-test.html:12 https://restcountries.eu/data/tkm.svg
-test.html:12 https://restcountries.eu/data/tca.svg
-test.html:12 https://restcountries.eu/data/tuv.svg
-test.html:12 https://restcountries.eu/data/uga.svg
-test.html:12 https://restcountries.eu/data/ukr.svg
-test.html:12 https://restcountries.eu/data/are.svg
-test.html:12 https://restcountries.eu/data/gbr.svg
-test.html:12 https://restcountries.eu/data/usa.svg
-test.html:12 https://restcountries.eu/data/ury.svg
-test.html:12 https://restcountries.eu/data/uzb.svg
-test.html:12 https://restcountries.eu/data/vut.svg
-test.html:12 https://restcountries.eu/data/ven.svg
-test.html:12 https://restcountries.eu/data/vnm.svg
-test.html:12 https://restcountries.eu/data/wlf.svg
-test.html:12 https://restcountries.eu/data/esh.svg
-test.html:12 https://restcountries.eu/data/yem.svg
-test.html:12 https://restcountries.eu/data/zmb.svg
-test.html:12 https://restcountries.eu/data/zwe.svg
+test.html:12 0 : https://restcountries.eu/data/afg.svg
+test.html:12 1 : https://restcountries.eu/data/ala.svg
+test.html:12 2 : https://restcountries.eu/data/alb.svg
+test.html:12 3 : https://restcountries.eu/data/dza.svg
+test.html:12 4 : https://restcountries.eu/data/asm.svg
+test.html:12 5 : https://restcountries.eu/data/and.svg
+test.html:12 6 : https://restcountries.eu/data/ago.svg
+test.html:12 7 : https://restcountries.eu/data/aia.svg
+test.html:12 8 : https://restcountries.eu/data/ata.svg
+test.html:12 9 : https://restcountries.eu/data/atg.svg
+test.html:12 10 : https://restcountries.eu/data/arg.svg
+test.html:12 11 : https://restcountries.eu/data/arm.svg
+test.html:12 12 : https://restcountries.eu/data/abw.svg
+test.html:12 13 : https://restcountries.eu/data/aus.svg
+test.html:12 14 : https://restcountries.eu/data/aut.svg
+test.html:12 15 : https://restcountries.eu/data/aze.svg
+test.html:12 16 : https://restcountries.eu/data/bhs.svg
+test.html:12 17 : https://restcountries.eu/data/bhr.svg
+test.html:12 18 : https://restcountries.eu/data/bgd.svg
+test.html:12 19 : https://restcountries.eu/data/brb.svg
+test.html:12 20 : https://restcountries.eu/data/blr.svg
+test.html:12 21 : https://restcountries.eu/data/bel.svg
+test.html:12 22 : https://restcountries.eu/data/blz.svg
+test.html:12 23 : https://restcountries.eu/data/ben.svg
+test.html:12 24 : https://restcountries.eu/data/bmu.svg
+test.html:12 25 : https://restcountries.eu/data/btn.svg
+test.html:12 26 : https://restcountries.eu/data/bol.svg
+test.html:12 27 : https://restcountries.eu/data/bes.svg
+test.html:12 28 : https://restcountries.eu/data/bih.svg
+test.html:12 29 : https://restcountries.eu/data/bwa.svg
+test.html:12 30 : https://restcountries.eu/data/bvt.svg
+test.html:12 31 : https://restcountries.eu/data/bra.svg
+test.html:12 32 : https://restcountries.eu/data/iot.svg
+test.html:12 33 : https://restcountries.eu/data/umi.svg
+test.html:12 34 : https://restcountries.eu/data/vgb.svg
+test.html:12 35 : https://restcountries.eu/data/vir.svg
+test.html:12 36 : https://restcountries.eu/data/brn.svg
+test.html:12 37 : https://restcountries.eu/data/bgr.svg
+test.html:12 38 : https://restcountries.eu/data/bfa.svg
+test.html:12 39 : https://restcountries.eu/data/bdi.svg
+test.html:12 40 : https://restcountries.eu/data/khm.svg
+test.html:12 41 : https://restcountries.eu/data/cmr.svg
+test.html:12 42 : https://restcountries.eu/data/can.svg
+test.html:12 43 : https://restcountries.eu/data/cpv.svg
+test.html:12 44 : https://restcountries.eu/data/cym.svg
+test.html:12 45 : https://restcountries.eu/data/caf.svg
+test.html:12 46 : https://restcountries.eu/data/tcd.svg
+test.html:12 47 : https://restcountries.eu/data/chl.svg
+test.html:12 48 : https://restcountries.eu/data/chn.svg
+test.html:12 49 : https://restcountries.eu/data/cxr.svg
+test.html:12 50 : https://restcountries.eu/data/cck.svg
+test.html:12 51 : https://restcountries.eu/data/col.svg
+test.html:12 52 : https://restcountries.eu/data/com.svg
+test.html:12 53 : https://restcountries.eu/data/cog.svg
+test.html:12 54 : https://restcountries.eu/data/cod.svg
+test.html:12 55 : https://restcountries.eu/data/cok.svg
+test.html:12 56 : https://restcountries.eu/data/cri.svg
+test.html:12 57 : https://restcountries.eu/data/hrv.svg
+test.html:12 58 : https://restcountries.eu/data/cub.svg
+test.html:12 59 : https://restcountries.eu/data/cuw.svg
+test.html:12 60 : https://restcountries.eu/data/cyp.svg
+test.html:12 61 : https://restcountries.eu/data/cze.svg
+test.html:12 62 : https://restcountries.eu/data/dnk.svg
+test.html:12 63 : https://restcountries.eu/data/dji.svg
+test.html:12 64 : https://restcountries.eu/data/dma.svg
+test.html:12 65 : https://restcountries.eu/data/dom.svg
+test.html:12 66 : https://restcountries.eu/data/ecu.svg
+test.html:12 67 : https://restcountries.eu/data/egy.svg
+test.html:12 68 : https://restcountries.eu/data/slv.svg
+test.html:12 69 : https://restcountries.eu/data/gnq.svg
+test.html:12 70 : https://restcountries.eu/data/eri.svg
+test.html:12 71 : https://restcountries.eu/data/est.svg
+test.html:12 72 : https://restcountries.eu/data/eth.svg
+test.html:12 73 : https://restcountries.eu/data/flk.svg
+test.html:12 74 : https://restcountries.eu/data/fro.svg
+test.html:12 75 : https://restcountries.eu/data/fji.svg
+test.html:12 76 : https://restcountries.eu/data/fin.svg
+test.html:12 77 : https://restcountries.eu/data/fra.svg
+test.html:12 78 : https://restcountries.eu/data/guf.svg
+test.html:12 79 : https://restcountries.eu/data/pyf.svg
+test.html:12 80 : https://restcountries.eu/data/atf.svg
+test.html:12 81 : https://restcountries.eu/data/gab.svg
+test.html:12 82 : https://restcountries.eu/data/gmb.svg
+test.html:12 83 : https://restcountries.eu/data/geo.svg
+test.html:12 84 : https://restcountries.eu/data/deu.svg
+test.html:12 85 : https://restcountries.eu/data/gha.svg
+test.html:12 86 : https://restcountries.eu/data/gib.svg
+test.html:12 87 : https://restcountries.eu/data/grc.svg
+test.html:12 88 : https://restcountries.eu/data/grl.svg
+test.html:12 89 : https://restcountries.eu/data/grd.svg
+test.html:12 90 : https://restcountries.eu/data/glp.svg
+test.html:12 91 : https://restcountries.eu/data/gum.svg
+test.html:12 92 : https://restcountries.eu/data/gtm.svg
+test.html:12 93 : https://restcountries.eu/data/ggy.svg
+test.html:12 94 : https://restcountries.eu/data/gin.svg
+test.html:12 95 : https://restcountries.eu/data/gnb.svg
+test.html:12 96 : https://restcountries.eu/data/guy.svg
+test.html:12 97 : https://restcountries.eu/data/hti.svg
+test.html:12 98 : https://restcountries.eu/data/hmd.svg
+test.html:12 99 : https://restcountries.eu/data/vat.svg
+test.html:12 100 : https://restcountries.eu/data/hnd.svg
+test.html:12 101 : https://restcountries.eu/data/hkg.svg
+test.html:12 102 : https://restcountries.eu/data/hun.svg
+test.html:12 103 : https://restcountries.eu/data/isl.svg
+test.html:12 104 : https://restcountries.eu/data/ind.svg
+test.html:12 105 : https://restcountries.eu/data/idn.svg
+test.html:12 106 : https://restcountries.eu/data/civ.svg
+test.html:12 107 : https://restcountries.eu/data/irn.svg
+test.html:12 108 : https://restcountries.eu/data/irq.svg
+test.html:12 109 : https://restcountries.eu/data/irl.svg
+test.html:12 110 : https://restcountries.eu/data/imn.svg
+test.html:12 111 : https://restcountries.eu/data/isr.svg
+test.html:12 112 : https://restcountries.eu/data/ita.svg
+test.html:12 113 : https://restcountries.eu/data/jam.svg
+test.html:12 114 : https://restcountries.eu/data/jpn.svg
+test.html:12 115 : https://restcountries.eu/data/jey.svg
+test.html:12 116 : https://restcountries.eu/data/jor.svg
+test.html:12 117 : https://restcountries.eu/data/kaz.svg
+test.html:12 118 : https://restcountries.eu/data/ken.svg
+test.html:12 119 : https://restcountries.eu/data/kir.svg
+test.html:12 120 : https://restcountries.eu/data/kwt.svg
+test.html:12 121 : https://restcountries.eu/data/kgz.svg
+test.html:12 122 : https://restcountries.eu/data/lao.svg
+test.html:12 123 : https://restcountries.eu/data/lva.svg
+test.html:12 124 : https://restcountries.eu/data/lbn.svg
+test.html:12 125 : https://restcountries.eu/data/lso.svg
+test.html:12 126 : https://restcountries.eu/data/lbr.svg
+test.html:12 127 : https://restcountries.eu/data/lby.svg
+test.html:12 128 : https://restcountries.eu/data/lie.svg
+test.html:12 129 : https://restcountries.eu/data/ltu.svg
+test.html:12 130 : https://restcountries.eu/data/lux.svg
+test.html:12 131 : https://restcountries.eu/data/mac.svg
+test.html:12 132 : https://restcountries.eu/data/mkd.svg
+test.html:12 133 : https://restcountries.eu/data/mdg.svg
+test.html:12 134 : https://restcountries.eu/data/mwi.svg
+test.html:12 135 : https://restcountries.eu/data/mys.svg
+test.html:12 136 : https://restcountries.eu/data/mdv.svg
+test.html:12 137 : https://restcountries.eu/data/mli.svg
+test.html:12 138 : https://restcountries.eu/data/mlt.svg
+test.html:12 139 : https://restcountries.eu/data/mhl.svg
+test.html:12 140 : https://restcountries.eu/data/mtq.svg
+test.html:12 141 : https://restcountries.eu/data/mrt.svg
+test.html:12 142 : https://restcountries.eu/data/mus.svg
+test.html:12 143 : https://restcountries.eu/data/myt.svg
+test.html:12 144 : https://restcountries.eu/data/mex.svg
+test.html:12 145 : https://restcountries.eu/data/fsm.svg
+test.html:12 146 : https://restcountries.eu/data/mda.svg
+test.html:12 147 : https://restcountries.eu/data/mco.svg
+test.html:12 148 : https://restcountries.eu/data/mng.svg
+test.html:12 149 : https://restcountries.eu/data/mne.svg
+test.html:12 150 : https://restcountries.eu/data/msr.svg
+test.html:12 151 : https://restcountries.eu/data/mar.svg
+test.html:12 152 : https://restcountries.eu/data/moz.svg
+test.html:12 153 : https://restcountries.eu/data/mmr.svg
+test.html:12 154 : https://restcountries.eu/data/nam.svg
+test.html:12 155 : https://restcountries.eu/data/nru.svg
+test.html:12 156 : https://restcountries.eu/data/npl.svg
+test.html:12 157 : https://restcountries.eu/data/nld.svg
+test.html:12 158 : https://restcountries.eu/data/ncl.svg
+test.html:12 159 : https://restcountries.eu/data/nzl.svg
+test.html:12 160 : https://restcountries.eu/data/nic.svg
+test.html:12 161 : https://restcountries.eu/data/ner.svg
+test.html:12 162 : https://restcountries.eu/data/nga.svg
+test.html:12 163 : https://restcountries.eu/data/niu.svg
+test.html:12 164 : https://restcountries.eu/data/nfk.svg
+test.html:12 165 : https://restcountries.eu/data/prk.svg
+test.html:12 166 : https://restcountries.eu/data/mnp.svg
+test.html:12 167 : https://restcountries.eu/data/nor.svg
+test.html:12 168 : https://restcountries.eu/data/omn.svg
+test.html:12 169 : https://restcountries.eu/data/pak.svg
+test.html:12 170 : https://restcountries.eu/data/plw.svg
+test.html:12 171 : https://restcountries.eu/data/pse.svg
+test.html:12 172 : https://restcountries.eu/data/pan.svg
+test.html:12 173 : https://restcountries.eu/data/png.svg
+test.html:12 174 : https://restcountries.eu/data/pry.svg
+test.html:12 175 : https://restcountries.eu/data/per.svg
+test.html:12 176 : https://restcountries.eu/data/phl.svg
+test.html:12 177 : https://restcountries.eu/data/pcn.svg
+test.html:12 178 : https://restcountries.eu/data/pol.svg
+test.html:12 179 : https://restcountries.eu/data/prt.svg
+test.html:12 180 : https://restcountries.eu/data/pri.svg
+test.html:12 181 : https://restcountries.eu/data/qat.svg
+test.html:12 182 : https://restcountries.eu/data/kos.svg
+test.html:12 183 : https://restcountries.eu/data/reu.svg
+test.html:12 184 : https://restcountries.eu/data/rou.svg
+test.html:12 185 : https://restcountries.eu/data/rus.svg
+test.html:12 186 : https://restcountries.eu/data/rwa.svg
+test.html:12 187 : https://restcountries.eu/data/blm.svg
+test.html:12 188 : https://restcountries.eu/data/shn.svg
+test.html:12 189 : https://restcountries.eu/data/kna.svg
+test.html:12 190 : https://restcountries.eu/data/lca.svg
+test.html:12 191 : https://restcountries.eu/data/maf.svg
+test.html:12 192 : https://restcountries.eu/data/spm.svg
+test.html:12 193 : https://restcountries.eu/data/vct.svg
+test.html:12 194 : https://restcountries.eu/data/wsm.svg
+test.html:12 195 : https://restcountries.eu/data/smr.svg
+test.html:12 196 : https://restcountries.eu/data/stp.svg
+test.html:12 197 : https://restcountries.eu/data/sau.svg
+test.html:12 198 : https://restcountries.eu/data/sen.svg
+test.html:12 199 : https://restcountries.eu/data/srb.svg
+test.html:12 200 : https://restcountries.eu/data/syc.svg
+test.html:12 201 : https://restcountries.eu/data/sle.svg
+test.html:12 202 : https://restcountries.eu/data/sgp.svg
+test.html:12 203 : https://restcountries.eu/data/sxm.svg
+test.html:12 204 : https://restcountries.eu/data/svk.svg
+test.html:12 205 : https://restcountries.eu/data/svn.svg
+test.html:12 206 : https://restcountries.eu/data/slb.svg
+test.html:12 207 : https://restcountries.eu/data/som.svg
+test.html:12 208 : https://restcountries.eu/data/zaf.svg
+test.html:12 209 : https://restcountries.eu/data/sgs.svg
+test.html:12 210 : https://restcountries.eu/data/kor.svg
+test.html:12 211 : https://restcountries.eu/data/ssd.svg
+test.html:12 212 : https://restcountries.eu/data/esp.svg
+test.html:12 213 : https://restcountries.eu/data/lka.svg
+test.html:12 214 : https://restcountries.eu/data/sdn.svg
+test.html:12 215 : https://restcountries.eu/data/sur.svg
+test.html:12 216 : https://restcountries.eu/data/sjm.svg
+test.html:12 217 : https://restcountries.eu/data/swz.svg
+test.html:12 218 : https://restcountries.eu/data/swe.svg
+test.html:12 219 : https://restcountries.eu/data/che.svg
+test.html:12 220 : https://restcountries.eu/data/syr.svg
+test.html:12 221 : https://restcountries.eu/data/twn.svg
+test.html:12 222 : https://restcountries.eu/data/tjk.svg
+test.html:12 223 : https://restcountries.eu/data/tza.svg
+test.html:12 224 : https://restcountries.eu/data/tha.svg
+test.html:12 225 : https://restcountries.eu/data/tls.svg
+test.html:12 226 : https://restcountries.eu/data/tgo.svg
+test.html:12 227 : https://restcountries.eu/data/tkl.svg
+test.html:12 228 : https://restcountries.eu/data/ton.svg
+test.html:12 229 : https://restcountries.eu/data/tto.svg
+test.html:12 230 : https://restcountries.eu/data/tun.svg
+test.html:12 231 : https://restcountries.eu/data/tur.svg
+test.html:12 232 : https://restcountries.eu/data/tkm.svg
+test.html:12 233 : https://restcountries.eu/data/tca.svg
+test.html:12 234 : https://restcountries.eu/data/tuv.svg
+test.html:12 235 : https://restcountries.eu/data/uga.svg
+test.html:12 236 : https://restcountries.eu/data/ukr.svg
+test.html:12 237 : https://restcountries.eu/data/are.svg
+test.html:12 238 : https://restcountries.eu/data/gbr.svg
+test.html:12 239 : https://restcountries.eu/data/usa.svg
+test.html:12 240 : https://restcountries.eu/data/ury.svg
+test.html:12 241 : https://restcountries.eu/data/uzb.svg
+test.html:12 242 : https://restcountries.eu/data/vut.svg
+test.html:12 243 : https://restcountries.eu/data/ven.svg
+test.html:12 244 : https://restcountries.eu/data/vnm.svg
+test.html:12 245 : https://restcountries.eu/data/wlf.svg
+test.html:12 246 : https://restcountries.eu/data/esh.svg
+test.html:12 247 : https://restcountries.eu/data/yem.svg
+test.html:12 248 : https://restcountries.eu/data/zmb.svg
+test.html:12 249 : https://restcountries.eu/data/zwe.svg
 
 3. 

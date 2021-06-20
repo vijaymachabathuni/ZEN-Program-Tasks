@@ -1,0 +1,54 @@
+1. Resume in JSON format
+
+    var resume = { name: "Vijay Siddharth Machabathuni", age: 23, gender: "Male", education: { "10th class": { institute: "Sri Chaitanya Techno School", 
+    "year of completion": 2014, location: "Gosala, Vijayawada", percentage: 100 }, "12th class": { institute: "Sri Chaitanya College", "year of completion": 2016, 
+    location: "Vijayawada", percentage: 97.5 }, undergrad: { institute: "Indian Institute of Technology Jodhpur", branch: "Computer Science(major) , Management(minor)", 
+    "year of completion": 2020, location: "Jodhpur", percentage: 61.1}}, languages: "Telugu, Hindi, English","technical skills": "C, C++, Java, JavaScript, HTML, CSS", 
+    hobbies: "Reading Crime-Fiction Novels, Calligraphy, Listening to Music", contact: 9588924783, email: "vijaysiddharth8848@gmail.com" }
+
+    console.log(resume)
+    
+    Output : {name: "Vijay Siddharth Machabathuni", age: 23, gender: "Male", education: {…}, languages: "Telugu, Hindi, English", …}
+              age: 23
+              contact: 9588924783
+              education:
+              10th class:
+              institute: "Sri Chaitanya Techno School"
+              location: "Gosala, Vijayawada"
+              percentage: 100
+              year of completion: 2014
+              __proto__: Object
+              12th class:
+              institute: "Sri Chaitanya College"
+              location: "Vijayawada"
+              percentage: 97.5
+              year of completion: 2016
+              __proto__: Object
+              undergrad:
+              branch: "Computer Science(major) , Management(minor)"
+              institute: "Indian Institute of Technology Jodhpur"
+              location: "Jodhpur"
+              percentage: 61.1
+              year of completion: 2020
+              __proto__: Object
+              __proto__: Object
+              email: "vijaysiddharth8848@gmail.com"
+              gender: "Male"
+              hobbies: "Reading Crime-Fiction Novels, Calligraphy, Listening to Music"
+              languages: "Telugu, Hindi, English"
+              name: "Vijay Siddharth Machabathuni"
+              technical skills: "C, C++, Java, JavaScript, HTML, CSS"
+              __proto__: Object
+              
+2. Comparison of two json objects with different ordering of keys
+      var obj1 = { name: "Person 1", age:5 };
+      var obj2 = { age:5, name: "Person 1" };
+      
+      JsonParser parser = new JsonParser();
+      String obj1 = "{ /"name"/: /"Person 1"/, /"age"/:5 }"
+      String obj1 = "{ /"age"/:5, /"name"/: /"Person 1"/ }"
+      JsonElement json1 = parser.parse(obj1);
+      JsonElement json2 = parser.parse(obj2);
+      assertEquals(json1, json2);
+      //True
+      

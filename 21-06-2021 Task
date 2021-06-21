@@ -1,0 +1,303 @@
+1. a) Print odd numbers in an array
+      Code - var odd = function(arr){
+                 var res = ""
+                 for( var i=0; i<arr.length; i++){
+                     if(arr[i]%2 !== 0){
+                         res = res + arr[i] + " "
+                     }
+                 }
+                 console.log(res)
+             }
+             var array = [1,2,3,4,5,6,7,8,9]
+             odd(array)
+             
+      Output : 1 3 5 7 9
+      
+      Using IIFE :  (function(arr){
+                        var res = ""
+                        for (var i = 0; i < arr.length; i++) {
+                            if (arr[i] % 2 !== 0) {
+                                res = res + arr[i] + " "
+                            }
+                        }
+                        console.log(res)
+                    })([1, 2, 3, 4, 5, 6, 7, 8, 9])
+                    
+      Output : 1 3 5 7 9
+   
+   b) Convert all the strings to title caps in a string array
+      Code - var titleCaps = function(s){
+                var str = s.split(" ")
+                var res = ""
+                for( i=0; i<str.length; i++){
+                    res = res + str[i].charAt(0).toUpperCase() + str[i].slice(1) + " "
+                }
+                console.log(res)
+             }
+             var s1 = "my name is vijay siddharth machabathuni"
+             titleCaps(s1)
+             
+      Output : My Name Is Vijay Siddharth Machabathuni
+      
+      Using IIFE :  (function(s){
+                        var str = s.split(" ")
+                        var res = ""
+                        for (i = 0; i < str.length; i++) {
+                            res = res + str[i].charAt(0).toUpperCase() + str[i].slice(1) + " "
+                        }
+                        console.log(res)
+                    })("my name is vijay siddharth machabathuni")
+                    
+      Output : My Name Is Vijay Siddharth Machabathuni
+      
+   c) Sum of all numbers in an array
+      Code - var sumArray = function(arr){
+                var sum = 0
+                for( var i=0; i<arr.length; i++){
+                    sum = sum + arr[i]
+                }
+                console.log(sum)
+             }
+             var a = [1,2,3,4,5,6,7,8,9, 10]
+             sumArray(a)
+             
+      Output : 55
+      
+      Using IIFE :  (function(arr){
+                        var sum = 0
+                        for (var i = 0; i < arr.length; i++) {
+                            sum = sum + arr[i]
+                        }
+                        console.log(sum)
+                    })([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+                    
+      Output : 55
+      
+   d) Return all the prime numbers in an array
+      Code - var displayPrime = function(arr){
+                var res = ""
+                for( var i=0; i<arr.length; i++){
+                    var flag = true
+                    if (arr[i] <= 1)
+                        flag = false
+                    else if(arr[i] === 2)
+                        flag = true
+                    else{
+                        for (var j = 2; j < arr[i]; j++){
+                            if (arr[i] % j === 0)
+                                flag = false
+                        }
+                    }
+                    if( flag === true){
+                        res = res + arr[i] + " "
+                    }
+                }
+                console.log(res)
+            }
+            var array = [1,2,3,4,5,6,7,8,9,10]
+            displayPrime(array)
+             
+      Output : 2 3 5 7
+      
+      Using IIFE :  (function(arr){
+                        var res = ""
+                        for (var i = 0; i < arr.length; i++) {
+                            var flag = true
+                            if (arr[i] <= 1)
+                                flag = false
+                            else if (arr[i] === 2)
+                                flag = true
+                            else {
+                                for (var j = 2; j < arr[i]; j++) {
+                                    if (arr[i] % j === 0)
+                                        flag = false
+                                }
+                            }
+                            if (flag === true) {
+                                res = res + arr[i] + " "
+                            }
+                        }
+                        console.log(res)
+                    })([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+                    
+      Output : 2 3 5 7
+      
+   e) Return all the palindromes in an array
+   f) Return median of two sorted arrays of same size
+      Code - var median = function(arr1, arr2){
+                var arr3 = [...arr1, ...arr2]
+                arr3.sort(function(a,b){return a-b})
+                var mid = arr3.length/2
+                var med = parseInt((arr3[mid-1] + arr3[mid])/2)
+                console.log(med)
+             }
+             a1 = [2,3,6,8,10]
+             a2 = [1,4,7,9,3]
+             median(a1,a2)
+             
+      Output : 5
+      
+      Using IIFE :  (function(arr1,arr2){
+                        var arr3 = [...arr1, ...arr2]
+                        arr3.sort(function (a, b) { return a - b })
+                        var mid = arr3.length / 2
+                        var med = parseInt((arr3[mid - 1] + arr3[mid]) / 2)
+                        console.log(med)
+                    })([2, 3, 6, 8, 10],[1, 4, 7, 9, 3])
+                    
+      Output : 5
+      
+   g) Remove duplicates from an array
+      Code - var removeDuplicates = function(arr){
+                var count = {}
+                for( var i=0; i<arr.length; i++){
+                    if(count[arr[i]] === undefined){
+                        count[arr[i]] = 1
+                    }
+                    else{
+                        count[arr[i]] = count[arr[i]] + 1
+                    }
+                }
+                var res = ""
+                for( var i=0; i<arr.length; i++){
+                    if(count[arr[i]] === 1){
+                        res = res + arr[i] + " "
+                    }
+                }
+                console.log(res)
+             }
+             var a = [2,3,4,3,4,5,5,6,3,7,8,9,2,5]
+             removeDuplicates(a)
+             
+      Output : 6 7 8 9  
+      
+      Using IIFE :  (function(arr){
+                        var count = {}
+                        for (var i = 0; i < arr.length; i++) {
+                            if (count[arr[i]] === undefined) {
+                                count[arr[i]] = 1
+                            }
+                            else {
+                                count[arr[i]] = count[arr[i]] + 1
+                            }
+                        }
+                        var res = ""
+                        for (var i = 0; i < arr.length; i++) {
+                            if (count[arr[i]] === 1) {
+                                res = res + arr[i] + " "
+                            }
+                        }
+                        console.log(res)
+                    })([2, 3, 4, 3, 4, 5, 5, 6, 3, 7, 8, 9, 2, 5])
+                    
+      Output : 6 7 8 9
+   
+   h) Rotate an array by k times
+      Code - var rotateArray = function(arr, key){
+                while(key>0){
+                    arr.unshift(arr.pop())
+                    key--
+                }
+                console.log(arr.join(" "))
+            }
+            var a = [1,2,3,4,5,6]
+            rotateArray(a,3)
+      
+      Output : 4 5 6 1 2 3
+      
+      Using IIFE :  (function(arr,key){
+                        while (key > 0) {
+                            arr.unshift(arr.pop())
+                            key--
+                        }
+                        console.log(arr.join(" "))
+                    })([1, 2, 3, 4, 5, 6],3)
+                    
+      Output : 4 5 6 1 2 3
+      
+3. a) Print odd numbers in an array
+      Code - var odd = (arr) => {
+                 var res = ""
+                 for( var i=0; i<arr.length; i++){
+                     if(arr[i]%2 !== 0){
+                         res = res + arr[i] + " "
+                     }
+                 }
+                 console.log(res)
+             }
+             var array = [1,2,3,4,5,6,7,8,9]
+             odd(array)
+             
+      Output : 1 3 5 7 9
+      
+   b) Convert all the strings to title caps in a string array
+      Code - var titleCaps = (s) => {
+                var str = s.split(" ")
+                var res = ""
+                for( i=0; i<str.length; i++){
+                    res = res + str[i].charAt(0).toUpperCase() + str[i].slice(1) + " "
+                }
+                console.log(res)
+             }
+             var s1 = "my name is vijay siddharth machabathuni"
+             titleCaps(s1)
+             
+      Output : My Name Is Vijay Siddharth Machabathuni
+      
+   c) Sum of all numbers in an array
+      Code - var sumArray = (arr) => {
+                var sum = 0
+                for( var i=0; i<arr.length; i++){
+                    sum = sum + arr[i]
+                }
+                console.log(sum)
+             }
+             var a = [1,2,3,4,5,6,7,8,9, 10]
+             sumArray(a)
+             
+      Output : 55
+      
+   d) Return all the prime numbers in an array
+      Code - var displayPrime = (arr) => {
+                var res = ""
+                for( var i=0; i<arr.length; i++){
+                    var flag = true
+                    if (arr[i] <= 1)
+                        flag = false
+                    else if(arr[i] === 2)
+                        flag = true
+                    else{
+                        for (var j = 2; j < arr[i]; j++){
+                            if (arr[i] % j === 0)
+                                flag = false
+                        }
+                    }
+                    if( flag === true){
+                        res = res + arr[i] + " "
+                    }
+                }
+                console.log(res)
+            }
+            var array = [1,2,3,4,5,6,7,8,9,10]
+            displayPrime(array)
+             
+      Output : 2 3 5 7
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

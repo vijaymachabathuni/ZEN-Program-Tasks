@@ -123,6 +123,56 @@
       Output : 2 3 5 7
       
    e) Return all the palindromes in an array
+      Code - var findPalindrome = function(arr){
+                var res = ""
+                for( var i=0; i<arr.length; i++){
+                    var flag = false
+                    var j = 0
+                    var l = arr[i].length
+                    var m = parseInt((l - 1)/2)
+                    while(j<m){
+                        if(arr[i][j] === arr[i][l-1-j]){
+                            flag = true
+                        }
+                        else
+                            flag = false
+                        j++
+                    }
+                    if( flag === true){
+                        res = res + arr[i] + " "
+                    }
+                }
+                console.log(res)
+            }
+            var a = ['123', 'madam', '5555', '488', 'vijay', '12121']
+            findPalindrome(a)
+            
+      Output : madam 5555 12121
+      
+      Using IIFE :      (function(arr){
+                            var res = ""
+                            for (var i = 0; i < arr.length; i++) {
+                                var flag = false
+                                var j = 0
+                                var l = arr[i].length
+                                var m = parseInt((l - 1) / 2)
+                                while (j < m) {
+                                    if (arr[i][j] === arr[i][l - 1 - j]) {
+                                        flag = true
+                                    }
+                                    else
+                                        flag = false
+                                    j++
+                                }
+                                if (flag === true) {
+                                    res = res + arr[i] + " "
+                                }
+                            }
+                            console.log(res)
+                        })(['123', 'madam', '5555', '488', 'vijay', '12121'])
+                    
+      Output : madam 5555 12121
+      
    f) Return median of two sorted arrays of same size
       Code - var median = function(arr1, arr2){
                 var arr3 = [...arr1, ...arr2]
@@ -283,6 +333,30 @@
              
       Output : 2 3 5 7
       
+   e) Return all the palindromes in an array
+      Code -  (function(arr){
+                  var res = ""
+                  for (var i = 0; i < arr.length; i++) {
+                       var flag = false
+                           var j = 0
+                           var l = arr[i].length
+                           var m = parseInt((l - 1) / 2)
+                           while (j < m) {
+                           if (arr[i][j] === arr[i][l - 1 - j]) {
+                                flag = true
+                           }
+                           else
+                                flag = false
+                           j++
+                       }
+                       if (flag === true) {
+                       res = res + arr[i] + " "
+                  }                            
+              }
+                 console.log(res)
+              })(['123', 'madam', '5555', '488', 'vijay', '12121'])
+                    
+      Output : madam 5555 12121
       
       
       

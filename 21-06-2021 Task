@@ -264,7 +264,68 @@
                     })([1, 2, 3, 4, 5, 6],3)
                     
       Output : 4 5 6 1 2 3
+
+2. a) Add Five to a number
+      Code - function addFive(num){
+                 console.log(num + 5)
+             }
+             addFive(5)
+             addFive(0)
+             addFive(-5)
       
+      Output : 10
+               5
+               0
+               
+   b) Get Full Name
+      Code - function getFullName(s1, s2){
+                console.log(s1 + " " + s2)
+             }
+             getFullName("GUVI", "GEEK");
+             getFullName("GUVI", "");
+             getFullName("" , "GEEK");
+             getFullName("", "");
+             
+             Output : GUVI GEEK
+                      GUVI 
+                       GEEK
+    
+    
+   c) Distance between two points  
+      Code -  function distance(x1, y1, x2, y2){
+                  var d = Math.sqrt(Math.pow((x1-x2),2) + Math.pow((y1-y2),2))
+                  console.log(d)
+              }
+              distance(100,100,400,500)
+      
+      Output : 500
+      
+   d) Get Value of the property
+      Code - function getProperty(obj,key){
+                 console.log(obj[key])
+             }
+             var obj = {name: "Siddhu", place: "India", age: 23}
+             getProperty(obj,"place")
+             getProperty(obj,"age")
+             getProperty(obj,"gender")
+      
+      Output : India
+               23
+               undefined
+   
+   e) Delete a key/property from an object
+      Code - function removeProperty(obj,key){
+                 delete obj[key]
+                 console.log(obj)
+             }
+             var obj = {name: "Siddhu", place: "India", age: 23}
+             removeProperty(obj, "age")
+      
+      Output : {name: "Siddhu", place: "India"}
+      
+   f) 
+   
+   
 3. a) Print odd numbers in an array
       Code - var odd = (arr) => {
                  var res = ""

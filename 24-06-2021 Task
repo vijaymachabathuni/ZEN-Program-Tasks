@@ -1,0 +1,109 @@
+1. class Movie{
+      constructor(t, s, r = 'PG'){
+          this.title = t
+          this.studio = s
+          this.rating = r 
+      }
+      getMovieInfo(){
+          return [this.title, this.studio, this.rating]
+      }
+      getPG(){
+
+      }
+  }
+
+  var film = new Movie("Casino Royale", "Eon Productions", "PG13")
+  console.log(film.getMovieInfo())    // ["Casino Royale", "Eon Productions", "PG13"]
+
+
+2. class Circle{
+      constructor(r, c){
+          this.radius = r
+          this.color = c 
+      }
+      getRadius(){
+          return this.radius
+      }
+      setRadius(rad){
+          this.radius = rad 
+      }
+      getColor() {
+          return this.color
+      }
+      setColor(col) {
+          this.color = col
+      }
+      toString(){
+          return Circle
+      }
+      getArea(){
+          return 3.14159 * Math.pow(this.radius,2)
+      }
+      getCircumference(){
+          return 2 * 3.14159 * this.radius
+      }
+  }
+
+  var obj = new Circle()
+  var obj1 = new Circle(1)
+  var obj2 = new Circle(1, "red")
+  console.log(obj2.getRadius())           // 1
+  console.log(obj2.getArea())             // 3.14159
+  console.log(obj2.getColor())            // red
+  console.log(obj2.getCircumference())    // 6.28318
+  obj2.setColor("pink")           
+  obj2.setRadius(10)
+  console.log(obj2.getRadius())           // 10
+  console.log(obj2.getArea())             // 31.4159
+  console.log(obj2.getColor())            // pink
+  console.log(obj2.getCircumference())    // 62.8318
+  console.log(obj2.toString())
+
+
+3. class Person{
+      constructor(fname, lname, age, gender, place){
+          this.fname = fname
+          this.lname = lname
+          this.age = age
+          this.gender = gender
+          this.place = place 
+      }
+      getName(){
+          return this.fname + " " + this.lname
+      }
+  }
+
+  var film = new Person("Vijay", "Siddharth", "23", "Male", "Guntur")
+  console.log(film.getName())   Vijay Siddharth
+  
+  
+4. class Uber{
+      constructor(place, distance, type, category, rating){
+          this.place = place
+          this.distance = distance
+          this.type = type
+          this.category = category
+          this.rating = rating 
+      }
+      // category    price/km
+      // 1. Basic      Rs 10
+      // 2. Premium    Rs 20
+      // 3. Delux      Rs 30
+
+      findPrice(){
+          if( this.category === "Basic"){
+              return this.distance * 10
+          }
+          else if (this.category === "Premium") {
+              return this.distance * 20
+          }
+          else {
+              return this.distance * 30
+          }
+      }
+  }
+
+  var uberCar = new Uber("Railway Station", 40 , "Sedan", "Premium", 4.5)
+  console.log(uberCar.findPrice())    // 800
+
+
